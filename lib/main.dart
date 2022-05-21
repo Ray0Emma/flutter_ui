@@ -14,14 +14,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -48,7 +40,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -72,34 +63,35 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('Top Stories'),
-                    Text('Samedi 20 Mai',style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.grey,
-                    ),),
+                    Text(
+                      'Samedi 20 Mai',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey,
+                      ),
+                    ),
                   ],
                 ),
-                Stack(
-                  children:[
-                    Container(
-                      width: 55,
-                      height: 55,
-                    decoration: BoxDecoration(
-                      color: Colors.yellow,
-                    ),
+                Stack(children: [
+                  CircleAvatar(
+                    child: Image.asset('assets/user_flutter.png'),
                   ),
-                    Positioned(
-                      right: 5,
-                      top: 2,
-                      child:  Container(
-                        width: 10,
-                        height: 10,
+                  Positioned(
+                    right: 4,
+                    top: 1,
+                    child: Container(
+                      width: 10,
+                      height: 10,
                       decoration: BoxDecoration(
                         color: Colors.red,
                         shape: BoxShape.circle,
-                        border: Border.all(color: Colors.white,width: 14
-                        )
+                        border: Border.all(
+                            color: Colors.white,
+                            width: 14.0,
+                            style: BorderStyle.solid),
                       ),
-                    ),)
+                    ),
+                  )
                 ]),
               ],
             ),
@@ -109,35 +101,39 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset('assets/flutter_ntr.jfif',fit: BoxFit.cover),
-                Padding(padding: EdgeInsets.only(left: 10,top: 10,bottom: 15),
-                child: Text('Addiction when Gambling Becomes a problem',
-                  style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold
+                Image.asset('assets/flutter_ntr.jfif', fit: BoxFit.cover),
+                Padding(
+                  padding: EdgeInsets.only(left: 10, top: 10, bottom: 15),
+                  child: Text(
+                    'Addiction when Gambling Becomes a problem',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
-                ),
                 ),
               ],
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 10,top: 10,bottom: 15),
-            child: Row(
-              children: [
-                Text('image'),
-                Column(
-                  children: [
-                    Text('non utilisateur'),
-                    Text('durée')
-                  ],
-                )
-              ],
-            )
-          )
-
+              padding: EdgeInsets.only(left: 10, top: 10, bottom: 15),
+              child: Row(
+                children: [
+                  // Container(
+                  //   width: 55,
+                  //   height: 55,
+                  //   decoration: const BoxDecoration(
+                  //     color: Colors.yellow,
+                  //     shape: BoxShape.circle,
+                  //   ),
+                  // ),
+                  CircleAvatar(
+                    child: Image.asset('assets/user_flutter.png'),
+                  ),
+                  Column(
+                    children: [Text(' nom utilisateur'), Text('durée')],
+                  )
+                ],
+              ))
         ],
       ),
-      );
+    );
   }
 }
