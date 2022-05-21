@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -111,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset('assests/flutter_ntr.jfif',fit: BoxFit.cover),
+                Image.asset('assets/flutter_ntr.jfif',fit: BoxFit.cover),
                 Padding(padding: EdgeInsets.only(left: 10,top: 10,bottom: 15),
                 child: Text('Addiction when Gambling Becomes a problem',
                   style: TextStyle(
