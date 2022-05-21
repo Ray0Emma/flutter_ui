@@ -99,9 +99,9 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(height: 12),
           Container(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Image.asset('assets/flutter_ntr.jfif', fit: BoxFit.cover),
+                Image.asset('assets/flutter_ntr.jfif', fit: BoxFit.fill),
                 Padding(
                   padding: EdgeInsets.only(left: 10, top: 10, bottom: 15),
                   child: Text(
@@ -126,6 +126,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   // ),
                   CircleAvatar(
                     child: Image.asset('assets/user_flutter.png'),
+                  ),
+                  SizedBox(
+                    width: 10,
                   ),
                   Column(
                     children: [Text(' nom utilisateur'), Text('durée')],
