@@ -80,7 +80,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Stack(children: [
                   CircleAvatar(
-                    child: Image.asset('assets/user_flutter.png'),
+                    radius: 25,
+                    backgroundColor: Colors.transparent,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(25),
+                      child: Image.asset('assets/user_flutter.jpg'),
+                    ),
                   ),
                   Positioned(
                     right: 4,
@@ -106,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Image.asset('assets/flutter_ntr.jfif', fit: BoxFit.fill),
+              Image.asset('assets/flutter_ntr.jpg', fit: BoxFit.fill),
               Padding(
                 padding: EdgeInsets.only(left: 13, top: 13, bottom: 15),
                 child: Text(
@@ -129,7 +134,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   //   ),
                   // ),
                   CircleAvatar(
-                    child: Image.asset('assets/user_flutter.png'),
+                    radius: 19,
+                    backgroundColor: Colors.transparent,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(19),
+                      child: Image.asset('assets/user_flutter.jpg'),
+                    ),
                   ),
                   SizedBox(
                     width: 13,
