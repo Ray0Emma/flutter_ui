@@ -122,41 +122,55 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           Container(
-              padding: EdgeInsets.only(left: 13, top: 10, bottom: 15),
-              child: Row(
-                children: [
-                  // Container(
-                  //   width: 55,
-                  //   height: 55,
-                  //   decoration: const BoxDecoration(
-                  //     color: Colors.yellow,
-                  //     shape: BoxShape.circle,
-                  //   ),
-                  // ),
-                  CircleAvatar(
-                    radius: 19,
-                    backgroundColor: Colors.transparent,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(19),
-                      child: Image.asset('assets/user_flutter.jpg'),
-                    ),
+            padding: EdgeInsets.only(left: 13, top: 10, bottom: 15),
+            child: Row(
+              children: [
+                // Container(
+                //   width: 55,
+                //   height: 55,
+                //   decoration: const BoxDecoration(
+                //     color: Colors.yellow,
+                //     shape: BoxShape.circle,
+                //   ),
+                // ),
+                CircleAvatar(
+                  radius: 19,
+                  backgroundColor: Colors.transparent,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(19),
+                    child: Image.asset('assets/user_flutter.jpg'),
                   ),
-                  SizedBox(
-                    width: 13,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Farah Ait Elahmadi',
-                          style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text(
-                        'durée',
-                        style: TextStyle(color: Colors.grey),
-                      )
-                    ],
-                  )
-                ],
-              ))
+                ),
+                SizedBox(
+                  width: 13,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Farah Ait Elahmadi',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    Text(
+                      'durée',
+                      style: TextStyle(color: Colors.grey),
+                    )
+                  ],
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 13,
+          ),
+          Container(
+            padding: EdgeInsets.only(left: 13, right: 13, bottom: 15),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"),
+              ],
+            ),
+          ),
         ],
       ),
     );
