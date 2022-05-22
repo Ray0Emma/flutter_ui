@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -52,17 +54,21 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           SizedBox(
-            height: 40,
+            height: 50,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            padding: EdgeInsets.symmetric(horizontal: 13),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Top Stories'),
+                    Text(
+                      'Top Stories',
+                      style:
+                          TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                    ),
                     Text(
                       'Samedi 20 Mai',
                       style: TextStyle(
@@ -97,23 +103,21 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           SizedBox(height: 12),
-          Container(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Image.asset('assets/flutter_ntr.jfif', fit: BoxFit.fill),
-                Padding(
-                  padding: EdgeInsets.only(left: 10, top: 10, bottom: 15),
-                  child: Text(
-                    'Addiction when Gambling Becomes a problem',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                  ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Image.asset('assets/flutter_ntr.jfif', fit: BoxFit.fill),
+              Padding(
+                padding: EdgeInsets.only(left: 13, top: 13, bottom: 15),
+                child: Text(
+                  'Addiction When Gambling Becomes A Problem',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
           Container(
-              padding: EdgeInsets.only(left: 10, top: 10, bottom: 15),
+              padding: EdgeInsets.only(left: 13, top: 10, bottom: 15),
               child: Row(
                 children: [
                   // Container(
@@ -128,10 +132,18 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Image.asset('assets/user_flutter.png'),
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 13,
                   ),
                   Column(
-                    children: [Text(' nom utilisateur'), Text('durée')],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Farah Ait Elahmadi',
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      Text(
+                        'durée',
+                        style: TextStyle(color: Colors.grey),
+                      )
+                    ],
                   )
                 ],
               ))
