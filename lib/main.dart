@@ -143,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           SizedBox(
-            height: 13,
+            height: 11,
           ),
           Container(
             padding: EdgeInsets.only(left: 13, right: 13, bottom: 15),
@@ -151,9 +151,9 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"),
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in."),
                 SizedBox(
-                  height: 13,
+                  height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -164,12 +164,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       size: 24.0,
                       semanticLabel: 'Pink Heart Icon',
                     ),
+                    SizedBox(width: 10), // give it width
                     Text('1125'),
+                    SizedBox(width: 30), // give it width
                     Icon(
                       Icons.comment_outlined,
                       color: Colors.pink,
                       size: 24.0,
                     ),
+                    SizedBox(width: 10), // give it width
                     Text('348'),
                   ],
                 )
