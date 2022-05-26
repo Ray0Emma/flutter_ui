@@ -152,6 +152,27 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"),
+                SizedBox(
+                  height: 13,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.favorite_rounded,
+                      color: Colors.pink,
+                      size: 24.0,
+                      semanticLabel: 'Pink Heart Icon',
+                    ),
+                    Text('1125'),
+                    Icon(
+                      Icons.comment_outlined,
+                      color: Colors.pink,
+                      size: 24.0,
+                    ),
+                    Text('348'),
+                  ],
+                )
               ],
             ),
           ),
