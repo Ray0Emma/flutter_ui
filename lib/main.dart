@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(width: 30), // give it width
                       Icon(
                         Icons.comment_outlined,
-                        color: Colors.grey[300],
+                        color: Colors.grey[400],
                         size: 24.0,
                       ),
                       SizedBox(width: 10), // give it width
