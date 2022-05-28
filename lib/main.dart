@@ -195,6 +195,14 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar:
+          BottomNavigationBar(selectedItemColor: Colors.pink, items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: 'Home'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.search_outlined), label: 'Search'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.settings_outlined), label: 'Setting'),
+      ]),
     );
   }
 }
